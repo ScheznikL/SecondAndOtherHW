@@ -13,9 +13,12 @@ public class MinMaxSum {
         for (int i=0; i < numArr.length; i++) {
             if(scan.hasNextInt())
                 numArr[i] = scan.nextInt();
-            else
+            else {
                 System.out.println("Incorrect input!");
+                return;
+            }
         }
+
 
         vMin=numArr[0];
         for (int i=0; i < numArr.length; i++){
@@ -31,6 +34,12 @@ public class MinMaxSum {
                 indexMax = i;
             }
         }
+
+        if(indexMax<0||indexMin<0) {
+            System.out.println("It seems you entered too many numbers..");
+            return;
+        }
+
         for(int i = indexMin+1; i<indexMax;i++) {
             Sum += numArr[i];
         }

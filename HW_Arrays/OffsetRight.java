@@ -1,6 +1,3 @@
-/*2.Напишіть програму, яка циклічно зсуває елементи масиву вправо на одну позицію та друкує результат.
-Циклічність означає, що останній елемент масиву стає найпершим його елементом.*/
-
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,8 +7,6 @@ public class OffsetRight {
 
         int [] values = new int[6];
 
-       // int indexMin=-1,indexMax=-1,vMin=0,vMax=0,Sum=0;
-
         System.out.println("Enter any 6 numbers:");
         Scanner scan = new Scanner(System.in);
 
@@ -19,7 +14,10 @@ public class OffsetRight {
             if(scan.hasNextInt())
                 values[i] = scan.nextInt();
             else
+            {
                 System.out.println("Incorrect input!");
+                return;
+            }
         }
         int temp=values[values.length-1];
 
@@ -29,6 +27,6 @@ public class OffsetRight {
 
         values[0]=temp;
 
-        System.out.println("Your array has been offsetted: " + Arrays.toString(values));
+        System.out.println("Your array has been shifted: " + Arrays.toString(values));
     }
 }
