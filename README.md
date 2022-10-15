@@ -2,4 +2,4 @@
 
 ## Java Club Homeworks
 
-*Here wiil be all of the tasks from Java Club clsses.*
+*Here wil be all of the tasks from Java Club clsses.*
