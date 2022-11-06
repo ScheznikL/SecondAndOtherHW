@@ -1,5 +1,4 @@
 package HW_OOP;
-
 public class Dragon extends Enemy{
 
   private boolean present = true;
@@ -25,7 +24,6 @@ public class Dragon extends Enemy{
         }
 
     }
-
     @Override
     public void attackHero(Hero hero) {
         System.out.println("Dragon is attacking Hero!");

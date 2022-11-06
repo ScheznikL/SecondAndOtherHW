@@ -19,6 +19,4 @@ public class Goblin extends Enemy {
                 hero.takeDamage(400);
         }
 
-
-
 }

@@ -1,5 +1,4 @@
 package HW_OOP;
-
 public class Paladin extends Hero{
 
     private boolean reviveRec=false;
@@ -7,7 +6,6 @@ public class Paladin extends Hero{
     public String getName() {
         return super.getName()+" obtained role of a Paladin";
     }
-
     public String Name() {
         return super.getName();
     }

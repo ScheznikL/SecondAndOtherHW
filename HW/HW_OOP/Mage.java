@@ -23,7 +23,6 @@ public class Mage extends Hero{
                 System.out.println("Mage is attacking Zombie!");
                 monster.takeDamage(100);}
     }
-
     public void Heal(){
     if(getHealth()!=2000){
         setHealth(getHealth()+200);

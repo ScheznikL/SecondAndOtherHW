@@ -1,5 +1,4 @@
 package HW_OOP;
-
 public abstract class Hero implements Mortal {
 
     protected String name = "Aragon";
@@ -24,7 +23,6 @@ public abstract class Hero implements Mortal {
     public boolean isAlive() {
         return health > 0;
     }
-
     public void takeDamage(int damage){
         health=health-damage;
         System.out.println("Hero --"+ damage+"\nHero health: "+health );

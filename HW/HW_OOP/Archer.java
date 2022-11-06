@@ -1,5 +1,4 @@
 package HW_OOP;
-
 public class Archer extends Hero{
 
     @Override

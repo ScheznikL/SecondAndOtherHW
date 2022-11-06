@@ -1,10 +1,7 @@
 package HW_OOP;
 
-
-
 import java.util.Random;
 import java.util.Scanner;
-
 
 public class BattleGround {
     static String GetName(Hero person){
@@ -38,7 +35,6 @@ public class BattleGround {
         System.out.println(paladin_hero.Name()+"\t VS \t"+"Group of monsters" +
                 "\n\t\t\t    Dragon\n\t\t\t    Zombie\n\t\t\t    Goblin\n"+"Health: \n"+paladin_hero.getHealth()+
                 "\t\t    "+dragon.getHealth()+"\n\t\t\t    "+zombie.getHealth()+"\n\t\t\t    "+goblin.getHealth()+"\n");
-
 
         while (true){
         System.out.println("\t\t\n--------------------------------\nQuick menu");

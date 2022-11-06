@@ -1,7 +1,6 @@
 package HW_OOP;
 
 public class Zombie extends Enemy {
-
     private int partsOfbody=5;//hands,head,legs
 
     public Zombie(int health) {
@@ -31,7 +30,6 @@ public class Zombie extends Enemy {
         }else System.out.println("Zombie is still alive!");
 
     }
-
     @Override
     public boolean isAlive() {
         return (partsOfbody>=0);
