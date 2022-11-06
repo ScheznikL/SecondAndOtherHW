@@ -1,17 +1,18 @@
 package HW_OOP;
 
-public class Enemy implements Mortal{
+public abstract class Enemy implements Mortal{
 
 private int health;
-
+private boolean present=true;
     public void setHealth(int health) {
         this.health = health;
     }
-
+    public boolean isPresent() {
+        return present;
+    }
     public int getHealth() {
         return health;
     }
-
     public Enemy(int health) {
         this.health = health;
     }
@@ -30,4 +31,7 @@ private int health;
     public boolean isAlive() {
         return health > 0;
     }
+
+    public abstract void attackHero(Hero hero);
+
 }

@@ -5,7 +5,7 @@ public class TrainingGround {
         return person.getName();
     }
     public static void main(String[] args) {
-
+/*
         Enemy monster = new Enemy(1000);
 
         Warrior warrior_hero = new Warrior();
@@ -16,7 +16,7 @@ public class TrainingGround {
 
         warrior_hero.attackEnemy(monster);
         archer_hero.attackEnemy(monster);
-        mage_hero.attackEnemy(monster);
+        mage_hero.attackEnemy(monster);*/
 
 
 
