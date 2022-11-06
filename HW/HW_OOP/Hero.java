@@ -1,6 +1,6 @@
 package HW_OOP;
 
-public class Hero {
+public abstract class Hero {
 
     protected String name = "Aragon";
 
@@ -8,12 +8,7 @@ public class Hero {
         return name;
     }
 
-    public void attackEnemy(Enemy monster){
-        System.out.println( "Hero is attacking enemy!");
-
-        monster.takeDamage(100);
-
-    }
+    public abstract void attackEnemy(Enemy monster);
 
 
 

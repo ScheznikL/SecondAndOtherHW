@@ -1,6 +1,6 @@
 package HW_OOP;
 
-public class Enemy {
+public class Enemy implements Mortal{
 
 private int health;
 
@@ -17,12 +17,17 @@ private int health;
     }
 
     public void takeDamage(int damage){
-
         health=health-damage;
         System.out.println("Enemy --"+ damage+"\nEnemy health: "+health );
-        if(health<0){
+        if(!isAlive()){
             System.out.println("Enemy was defeated...");
+        }else {
+            System.out.println("Enemy still alive!");
         }
     }
 
+    @Override
+    public boolean isAlive() {
+        return health > 0;
+    }
 }
